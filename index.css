@@ -1,0 +1,2145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    font-size: 1em;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+a:visited,a:link{
+    color: #333333;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+}
+input{
+    outline: none;
+}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+.hidden{
+    display: none;
+}
+/*头部开始*/
+.header{
+    height: 164px;
+    background: #fff;
+}
+/*头部第一部分开始*/
+.nav{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #f7f7f7;
+    font-size: 12px;
+}
+.nav .center{
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav .navR{
+    float: right;
+}
+.nav li{
+    float: left;
+}
+.nav .list{
+    position: relative;
+    z-index: 900;
+}
+.nav .list dl{
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #dfdfdf;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+.nav .list dl dt{
+    background: #fff none repeat scroll 0 0;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 7px;
+    text-align: left;
+}
+.nav .list dl dd{
+    padding: 0 7px;
+    text-align: left;
+    background: #fff none repeat scroll 0 0;
+    border-top: medium none;
+    color: #333;
+    line-height: 28px;
+}
+.nav .list dl dd a:hover{
+    color: #d80c18;
+}
+.nav li a{
+    color: #999;
+    padding: 0 13px;
+}
+.navL .one{
+    padding: 0 10px;
+}
+.navL dl dt span{
+    padding: 0 7px 0 5px;
+}
+.navR dl dt,dd{
+    padding: 0 12px;
+}
+.navL .jiantou_down{
+    background: url("img/jiantou.png") no-repeat;
+    background-position: 0 0;
+    padding: 3px 0 0 3px;
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+}
+.navL .jiantou_up{
+    background: url("img/jiantou.png") no-repeat;
+    background-position: 0 -7px;
+    padding: 3px 0 0 3px;
+    display: inline-block;
+    height: 5px;
+    width: 8px;
+}
+.navR .jiantou_down{
+    background: url("img/jiantou.png") no-repeat;
+    background-position: right 0;
+    padding: 3px 0 0 10px;
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+}
+.navR .jiantou_up{
+    background: url("img/jiantou.png") no-repeat;
+    background-position: right -7px;
+    padding: 3px 0 0 10px;
+    display: inline-block;
+    height: 3px;
+    width: 8px;
+}
+.navR .cat{
+    background-image: url("img/gouwuche.png");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    padding-left: 10px;
+}
+/*头部第一部分结束*/
+
+/*头部第二部分开始*/
+.header_main{
+    width: 1200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_main .logo{
+    float: left;
+    width: 590px;
+    height: 100px;
+}
+.header_main .logo a{
+    float: left;
+    width: 327px;
+    height: 100px;
+    line-height: 110px;
+    background-image: url("img/logo.png");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 327px auto;
+    margin-left: 15px;
+    padding: 0;
+    text-indent: -8888px;
+}
+.header_main .search{
+    float: right;
+    width: 605px;
+    padding-top: 34px;
+    text-align: center;
+    position: relative;
+}
+.header_main .search .input{
+    height: 36px;
+    border: 2px solid #c80000;
+}
+.header_main .search .input .text{
+    width: 500px;
+    height: 36px;
+    text-indent: 10px;
+    float: left;
+    color: #666;
+    border: medium none;
+    font-size: 14px;
+}
+.header_main .search .input .btn{
+    width: 100px;
+    height: 36px;
+    float: right;
+    color: #ffffff;
+    background-color: #c80000;
+    border: medium none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.header_main .search .hotkey{
+    position: absolute;
+    right: 100px;
+    top: 36px;
+    line-height: 36px;
+    text-align: right;
+    z-index: 1;
+}
+.header_main .search .hotkey ul li{
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 11px;
+}
+.header_main .search .hotkey ul li a{
+    color: #666666;
+}
+.header_main .search .list{
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+    position: absolute;
+    left: 1px;
+    top: 73px;
+    overflow: hidden;
+    width: 500px;
+    max-height: 200px;
+    z-index: 999;
+    display: none;
+}
+.header_main .search .list li{
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    padding: 0 8px;
+    color: #666666;
+    cursor: default;
+    font-size: 12px;
+}
+.header_main .search .list li.show{
+    color: #ffffff;
+    background: #c80000;
+}
+.header_main .search .list li span{
+    display: inline-block;
+    width: 100%;
+}
+/*头部第二部分结束*/
+.center{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*头部第三部分开始*/
+.header_menu{
+    height: 32px;
+    border-bottom: 2px solid #333;
+}
+.header_menu .center .products{
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 33px;
+    z-index: 300;
+}
+.header_menu .center .products_title{
+    background-color: #333;
+    border-bottom: 2px solid #333;
+    font-size: 14px;
+    text-align: center;
+    width: 220px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.header_menu .center .products_title span{
+    background-image: url("img/quanbushangpin.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: default;
+    display: inline-block;
+    padding-left: 35px;
+}
+.header_menu .center .products_list{
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.18);
+    height: 460px;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    z-index: 2;
+}
+.header_menu .center .products_list li{
+    width: 220px;
+    height: 64px;
+    overflow: hidden;
+}
+.header_menu .center .products_list li a{
+    display: block;
+    width: 160px;
+    padding: 0 30px;
+}
+.header_menu .center .products_list li a span{
+    background-image: url("img/zuoyoujiantou.png");
+    background-position: right -5px;
+    background-repeat: no-repeat;
+    color: #333;
+    display: block;
+    font-size: 14px;
+    height: 64px;
+    line-height: 64px;
+    border-top: 1px solid #ffffff;
+}
+.header_menu .center .products_list li a span:hover{
+    color: #c80000;
+    background-image: url("img/zuoyoujiantou.png");
+    background-position: right -85px;
+    background-repeat: no-repeat;
+}
+.header_menu .center .products .same{
+    background-color: #fff;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    left: 220px;
+    z-index: 3;
+    height: 460px;
+    display: none;
+}
+.header_menu .center .products .same li a:hover{
+    color: #c80000;
+}
+.header_menu .center .products .tv,.phone,.zhineng{
+    width: 980px;
+    top: 0;
+}
+.header_menu .center .products .peijian,.tiyu,.yule,.wangjiu{
+    width: 460px;
+    top: 0;
+}
+.header_menu .center .products .box1,.box3{
+    float: left;
+    width: 720px;
+    height: 460px;
+}
+.header_menu .center .products .box1 ul{
+    float: left;
+    margin: 0 15px 0 35px;
+    width: 130px;
+}
+.header_menu .center .products .box1 .product_title{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 4px;
+    padding: 47px 0 17px;
+    position: relative;
+    width: 130px;
+}
+.header_menu .center .products .box1 .product_title span{
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+.header_menu .center .products .box1 .product_title .hot{
+    background-image: url("img/1.1.png");
+    background-repeat: no-repeat;
+    background-size: 31px auto;
+    display: block;
+    width: 31px;
+    height: 13px;
+    position: absolute;
+    left: 65px;
+    top: 50px;
+}
+.header_menu .center .products .box1 ul li{
+    color: #777;
+    height: 48px;
+    line-height: 48px;
+    list-style: inside none square;
+    padding-left: 6px;
+}
+.header_menu .center .products .box1 li a span{
+    color: #777777;
+    font-size: 12px;
+}
+.header_menu .center .products .box1 li a span:hover{
+    color: #c80000;
+}
+.header_menu .center .products .box2{
+    float: right;
+    width: 240px;
+    height: 440px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 680px;
+}
+.header_menu .center .products .box3 .p1{
+    float: left;
+}
+.header_menu .center .products .box3 .p1 .p2{
+    border-bottom: 1px solid #eaeaea;
+    margin: 0 20px 4px 35px;
+    padding: 47px 0 17px;
+}
+.header_menu .center .products .box3 .p1 .p2 span{
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+.header_menu .center .products .box3 .p1 ul{
+    float: left;
+    padding: 0 20px 0 35px;
+    width: 165px;
+}
+.header_menu .center .products .box3 .p1 ul li{
+    height: 40px;
+    overflow: hidden;
+    padding: 20px 0 25px;
+    width: 165px;
+}
+.header_menu .center .products .pic{
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.header_menu .center .products .pic img{
+    height: 40px;
+    width: 40px;
+}
+.header_menu .center .products .box3 .p1 .text{
+    float: left;
+    padding-left: 10px;
+    width: 114px;
+    font-size: 12px;
+    line-height: 40px;
+}
+.header_menu .center .products .box4{
+    float: right;
+    width: 240px;
+    height: 440px;
+    padding: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 690px;
+}
+.header_menu .products .aa ul{
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 425px;
+    padding: 20px 10px 15px 40px;
+    width: 180px;
+}
+.header_menu .products .aa ul li{
+    height: 40px;
+    overflow: hidden;
+    padding: 20px 0 25px;
+}
+.header_menu .products .aa ul li .text{
+    float: left;
+    padding-left: 10px;
+    width: 130px;
+    font-size: 12px;
+    line-height: 40px;
+}
+.header_menu .products .aa ul li .text .a1{
+    font-size: 12px;
+    line-height: 20px;
+}
+.header_menu .products .aa ul li .text .a2{
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+.header_menu .products .aa ul li .text .a2 .line{
+    cursor: default;
+    padding: 0 5px;
+}
+
+.header_menu .center .menu_list{
+    float: left;
+}
+.header_menu .center li{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: bottom;
+}
+.header_menu .center .menu_list li a{
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 18px;
+    position: relative;
+    padding-top: 1px;
+    color: #303233;
+}
+.header_menu .center .menu_right{
+    float: right;
+}
+.header_menu .center .menu_right li a{
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 12px;
+    padding-top: 1px;
+    color: #666666;
+}
+/*头部第三部分结束*/
+
+/*轮播图开始*/
+.lunbotu{
+    width: 100%;
+    height: 460px;
+    position: relative;
+    z-index: 1;
+}
+.lunbotu .boxInner div{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity:0);
+}
+.lunbotu .boxInner div img{
+    width: 100%;
+    height: 100%;
+}
+.lunbotu ul{
+    position: absolute;
+    right: 75px;
+    bottom: 10px;
+    z-index: 10;
+}
+.lunbotu ul li{
+    width: 8px;
+    height: 8px;
+    background: rgba(76, 76, 76, 0.5) none repeat scroll 0 0;
+    border-radius: 50%;
+    border: 0 solid #ccc;
+    margin: 2px 5px;
+    float: left;
+    cursor: pointer;
+}
+.lunbotu ul li.bg{
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #808080;
+    margin: 0 5px;
+}
+.lunbotu a{
+    width: 15px;
+    height: 25px;
+    background-image: url("img/lunbotujiantou.png");
+    background-repeat: no-repeat;
+    /*background-position: -105px -5px;*/
+    position: absolute;
+    top: 217.5px;
+    z-index: 3;
+    display: none;
+    /*left: 143px;*/
+}
+.lunbotu a.btnLeft{
+    background-position: -7px -2px;
+    left: 330px;
+}
+.lunbotu a.btnRight{
+    background-position: -47px -2px;
+    right: 120px;
+}
+/*轮播图结束*/
+
+/*首屏广告位 开始*/
+.main_first{
+    position: relative;
+    padding-top: 22px;
+    width: 1200px;
+    height: 430px;
+}
+.main_first .activity{
+    width: 100%;
+    height: 190px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 22px;
+}
+.main_first .activity ul li{
+    float: left;
+    margin-left: 6px;
+}
+.main_first .activity ul li:first-child{
+    margin-left: 0;
+}
+.main_first .activity ul li img{
+    width: 235px;
+    height: 150px;
+}
+.main_first .activity ul li .name{
+    color: #333;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main_first .product{
+    float: left;
+    padding: 0;
+    width: 717px;
+    height: 210px;
+}
+.main_first .product ul li{
+    float: left;
+    margin-left: 6px;
+}
+.main_first .product ul li:first-child{
+    margin-left: 0;
+}
+.main_first .product ul li img{
+    width: 235px;
+    height: 210px;
+}
+.main_first .huiyuan{
+    background-color: #f9f9f9;
+    float: left;
+    width: 235px;
+    height: 210px;
+    margin-left: 6px;
+}
+.main_first .huiyuan .title{
+    background-image: url("img/huiyuan.png");
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    background-size: auto 16px;
+    height: 24px;
+    line-height: 24px;
+    margin: 14px 0 0 22px;
+    padding-left: 24px;
+}
+.main_first .huiyuan .title span{
+    color: #333333;
+    font-size: 14px;
+}
+.main_first .huiyuan .huiyuanBtn{
+    padding-top: 17px;
+}
+.main_first .huiyuan .huiyuanBtn a{
+    background-color: #f01e00;
+    border-radius: 2px;
+    display: block;
+    width: 195px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main_first .huiyuan .huiyuanBtn a:hover{
+    background-color: #d80000;
+}
+.main_first .huiyuan .huiyuanBtn a span{
+    color: #ffffff;
+    font-size: 12px;
+}
+.main_first .huiyuan .tips{
+    line-height: 16px;
+    padding: 6px 0 0 22px;
+    width: 195px;
+}
+.main_first .huiyuan .tips span{
+    color: #999999;
+    font-size: 12px;
+}
+.main_first .huiyuan .gameBtn{
+    padding-top: 13px;
+}
+.main_first .huiyuan .gameBtn a{
+    background-color: #ff8000;
+    border-radius: 2px;
+    display: block;
+    width: 195px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main_first .huiyuan .gameBtn a:hover{
+    background-color: #ff7800;
+}
+.main_first .huiyuan .gameBtn a span{
+    color: #ffffff;
+    font-size: 12px;
+}
+.main_first .toutiao{
+    background-color: #f9f9f9;
+    float: left;
+    height: 210px;
+    margin-left: 5px;
+    width: 235px;
+}
+.main_first .toutiao .top{
+    height: 24px;
+    padding: 14px 24px 4px 22px;
+}
+.main_first .toutiao .top .left{
+    float: left;
+    background-image: url("img/xiaolaba.png");
+    background-position: 0 5px;
+    background-repeat: no-repeat;
+    background-size: auto 14px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 24px;
+    width: 88px;
+}
+.main_first .toutiao .top .left{
+    color: #c80000;
+    font-size: 14px;
+    font-weight: 700;
+}
+.main_first .toutiao .top .right{
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    color: #808080;
+    font-size: 12px;
+}
+.main_first .bottom{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 5px;
+    width: 186px;
+}
+.main_first .bottom li{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main_first .bottom li a span:first-child{
+    color: #c80000;
+    font-size: 12px;
+    padding-right: 13px;
+}
+.main_first .bottom li a span:last-child{
+    color: #323333;
+    font-size: 12px;
+}
+/*首屏广告位 结束*/
+
+/*楼层开始*/
+.floor .floor1,.floor2,.same{
+    height: 700px;
+    background-color: #ffffff;
+}
+.floor .left{
+    float: left;
+    height: 32px;
+    padding: 51px 5px 17px;
+}
+.floor .left span{
+    font-weight: 700;
+    line-height: 32px;
+}
+.floor .left .num{
+    font-size: 16px;
+}
+.floor .left .name{
+    font-size: 18px;
+    padding-left: 23px;
+}
+.floor .right{
+    float: right;
+    padding: 51px 5px 17px 0;
+}
+.floor .right a{
+    height: 32px;
+    line-height: 32px;
+}
+.floor .right a .jiantou{
+    background-image: url("img/css.png");
+    background-repeat: no-repeat;
+    background-size: 250px auto;
+    background-position: -100px -102px;
+    height: 28px;
+    margin-top: 2px;
+    width: 28px;
+    float: left;
+}
+.floor .right a:hover .jiantou{
+    background-position: -100px -225px;
+}
+.floor .right a:hover .gengduo{
+    color: #f01e00;
+}
+.floor .right a .gengduo{
+    color: #666666;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 15px;
+    float: left;
+}
+.floor .list{
+    position: relative;
+    height: 32px;
+}
+/*1F*/
+.floor .floor1 .left a{
+    color: #2D6CD4;
+}
+.floor .floor1 .list .product1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.floor .floor1 .list .product1 a img{
+    width: 350px;
+    height: 400px;
+}
+.floor .floor1 .list .product2{
+    position: absolute;
+    border: 1px solid #e8e8e8;
+    height: 399px;
+    left: 350px;
+    padding: 0 45px 0 44px;
+    top: 0;
+    width: 280px;
+    z-index: 1;
+}
+.floor .floor1 .list .product2 a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor1 .list .product2 .a1{
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-top: 65px;
+    text-align: center;
+}
+.floor .floor1 .list .product2 .a1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor1 .list .product2 .a2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .floor1 .list .product2 .a2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor1 .list .product2 .a3{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.floor .floor1 .list .product2 .a3 img{
+    width: 200px;
+    height: 200px;
+}
+.floor .floor1 .list .product2 .a4{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 4px;
+    text-align: center;
+}
+.floor .floor1 .list .product2 .a4 span{
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .floor1 .list .product3{
+    border: 1px solid #e8e8e8;
+    width: 205px;
+    height: 399px;
+    padding: 0 17px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 720px;
+}
+.floor .floor1 .list .product3 a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor1 .list .product3 .a1{
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-top: 65px;
+    text-align: center;
+}
+.floor .floor1 .list .product3 .a1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor1 .list .product3 .a2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .floor1 .list .product3 .a2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor1 .list .product3 .a3{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.floor .floor1 .list .product3 .a3 img{
+    width: 170px;
+    height: 170px;
+}
+.floor .floor1 .list .product3 .a4{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 4px;
+    text-align: center;
+}
+.floor .floor1 .list .product3 .a4 span{
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .floor1 .list .product4{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 960px;
+}
+.floor .floor1 .list .product4 a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor1 .list .product4 .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor1 .list .product4 .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor1 .list .product4 .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor1 .list .product4 .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor1 .list .product4 .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor1 .list .product4 .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .floor1 .list .product5{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    left: 960px;
+}
+.floor .floor1 .list .product5 a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor1 .list .product5 .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor1 .list .product5 .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor1 .list .product5 .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor1 .list .product5 .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor1 .list .product5 .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor1 .list .product5 .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .floor1 .list .product6{
+    width: 350px;
+    height: 201px;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    z-index: 10;
+}
+.floor .floor1 .list .product6 .a1{
+    background-image: url("img/css1.png");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: -135px -145px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+.floor .floor1 .list .product6 .a2{
+    position: relative;
+    height: 100%;
+}
+.floor .floor1 .list .product6 .a3{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 32px;
+    text-align: center;
+}
+.floor .floor1 .list .product6 a:hover span{
+    color: #c80000;
+}
+.floor .floor1 .list .product7{
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    left: 350px;
+    top: 400px;
+    padding: 0 45px 0 44px;
+    height: 199px;
+    width: 280px;
+    z-index: 1;
+}
+.floor .floor1 .list .product7 a:hover span{
+    color: #c80000;
+}
+.floor .floor1 .list .product7 .a1{
+    height: 25px;
+    line-height: 25px;
+    padding-top: 30px;
+    text-align: center;
+}
+.floor .floor1 .list .product7 .a1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor1 .list .product7 .a2{
+    height: 18px;
+    line-height: 18px;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor1 .list .product7 .a2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor1 .list .product7 .a3{
+    height: 110px;
+    margin: 0 auto;
+    width: 110px;
+}
+.floor .floor1 .list .product7 .a3 img{
+    width: 110px;
+    height: 110px;
+}
+.floor .floor1 .list .product8{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 479px;
+    z-index: 1;
+    position: absolute;
+    left: 720px;
+    top: 400px;
+}
+.floor .floor1 .list .product8 a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor1 .list .product8 .a1{
+    float: left;
+    width: 170px;
+    height: 170px;
+    padding: 15px 30px 14px;
+}
+.floor .floor1 .list .product8 .a1 img{
+    width: 170px;
+    height: 170px;
+}
+.floor .floor1 .list .product8 .a2{
+    float: left;
+    width: 220px;
+}
+.floor .floor1 .list .product8 .b1{
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    padding-top: 45px;
+    text-align: center;
+}
+.floor .floor1 .list .product8 .b1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor1 .list .product8 .b2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .floor1 .list .product8 .b2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor1 .list .product8 .b3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .floor1 .list .product8 .b3 span{
+    color: #d70000;
+    font-size: 14px;
+}
+
+/*2F*/
+.floor .floor2 .left a{
+    color:#E4B915 ;
+}
+.floor .floor2 .list .product1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.floor .floor2 .list .product1 a img{
+    width: 240px;
+    height: 400px;
+}
+.floor .floor2 .list .z{
+    border: 1px solid #e8e8e8;
+    width: 205px;
+    height: 399px;
+    padding: 0 17px;
+    z-index: 1;
+    float: right;
+}
+.floor .floor2 .list .z a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor2 .list .z .a1{
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-top: 65px;
+    text-align: center;
+}
+.floor .floor2 .list .z .a1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor2 .list .z .a2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .floor2 .list .z .a2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor2 .list .z .a3{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.floor .floor2 .list .z .a3 img{
+    width: 170px;
+    height: 170px;
+}
+.floor .floor2 .list .z .a4{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 4px;
+    text-align: center;
+}
+.floor .floor2 .list .z .a4 span{
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .floor2 .list .a{
+    border: 1px solid #e8e8e8;
+    height: 198px;
+    width: 238px;
+    float: left;
+}
+.floor .floor2 .list .product6 .a1{
+    background-image: url("img/css1.png");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: -135px -145px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 970px;
+    top: 410px;
+}
+.floor .floor2 .list .product6 .a2{
+    position: relative;
+    height: 100%;
+}
+.floor .floor2 .list .product6 .a3{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 32px;
+    text-align: center;
+}
+.floor .floor2 .list .product6 a:hover span{
+    color: #c80000;
+}
+.floor .floor2 .list .b a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor2 .list .b .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor2 .list .b .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor2 .list .b .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor2 .list .b .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor2 .list .b .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor2 .list .b .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .floor2 .list .c img{
+    height: 198px;
+    width: 238px;
+}
+
+/*3F*/
+.floor .same .left a{
+    color: #03B5C4;
+}
+.floor .same .list .product1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.floor .same .list .product1 a img{
+    width: 240px;
+    height: 400px;
+}
+.floor .same .list .a{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 479px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
+.floor .same .list .product3{
+    top: 200px;
+}
+.floor .same .list .a a:hover h3 span{
+    color: #c80000;
+}
+.floor .same .list .a .a1{
+    float: left;
+    width: 170px;
+    height: 170px;
+    padding: 15px 30px 14px;
+}
+.floor .same .list .a .a1 img{
+    width: 170px;
+    height: 170px;
+}
+.floor .same .list .a .a2{
+    float: left;
+    width: 220px;
+}
+.floor .same .list .a .b1{
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    padding-top: 45px;
+    text-align: center;
+}
+.floor .same .list .a .b1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .same .list .a .b2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .same .list .a .b2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .same .list .a .b3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .same .list .a .b3 span{
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .same .list .product4{
+    border: 1px solid #e8e8e8;
+    width: 205px;
+    height: 399px;
+    padding: 0 17px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 720px;
+}
+.floor .same .list .product4 a:hover h3 span{
+    color: #c80000;
+}
+.floor .same .list .product4 .a1{
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-top: 65px;
+    text-align: center;
+}
+.floor .same .list .product4 .a1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .same .list .product4 .a2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .same .list .product4 .a2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .same .list .product4 .a3{
+    width: 200px;
+    height: 200px;
+    margin-left: 16px;
+    padding-top: 16px;
+}
+.floor .same .list .product4 .a3 img{
+    width: 170px;
+    height: 170px;
+}
+.floor .same .list .product4 .a4{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 4px;
+    text-align: center;
+}
+.floor .same .list .product4 .a4 span{
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .same .list .b{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 960px;
+}
+.floor .same .list .product6{
+    top: 200px;
+}
+.floor .same .list .b a:hover h3 span{
+    color: #c80000;
+}
+.floor .same .list .b .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .same .list .b .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .same .list .b .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .same .list .b .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .same .list .b .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .same .list .b .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .same .list .product7{
+    width: 240px;
+    height: 201px;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    z-index: 10;
+}
+.floor .same .list .product7 .a1{
+    background-image: url("img/css1.png");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: -135px -145px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+.floor .same .list .product7 .a2{
+    position: relative;
+    height: 100%;
+}
+.floor .same .list .product7 .a3{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 32px;
+    text-align: center;
+}
+.floor .same .list .product7 a:hover span{
+    color: #c80000;
+}
+.floor .same .list .product8{
+    top: 400px;
+    left: 240px;
+}
+.floor .same .list .product9{
+    top: 400px;
+    left: 480px;
+}
+.floor .same .list .c{
+    position: absolute;
+    top: 400px;
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+}
+.floor .same .list .c img{
+    height: 199px;
+    width: 239px;
+}
+.floor .same .list .product10{
+    left: 720px;
+}
+.floor .same .list .product11{
+    left: 960px;
+}
+
+/*4F*/
+.floor .floor4 .left a{
+    color: #0E529B;
+}
+.floor .floor4 .list .d{
+    border: 1px solid #e8e8e8;
+    width: 205px;
+    height: 399px;
+    padding: 0 17px;
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    left: 240px;
+}
+.floor .floor4 .list .d a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor4 .list .d .a1{
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-top: 65px;
+    text-align: center;
+}
+.floor .floor4 .list .d .a1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor4 .list .d .a2{
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 13px;
+    text-align: center;
+}
+.floor .floor4 .list .d .a2 span{
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor4 .list .d .a3{
+    width: 200px;
+    height: 200px;
+    margin-left: 16px;
+    padding-top: 16px;
+}
+.floor .floor4 .list .d .a3 img{
+    width: 170px;
+    height: 170px;
+}
+.floor .floor4 .list .d .a4{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 4px;
+    text-align: center;
+}
+.floor .floor4 .list .d .a4 span{
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .floor4 .list .product9{
+    left: 480px;
+}
+.floor .floor4 .list .product10{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    left: 720px;
+    top: 400px;
+}
+.floor .floor4 .list .product10 a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor4 .list .product10 .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor4 .list .product10 .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor4 .list .product10 .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor4 .list .product10 .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor4 .list .product10 .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor4 .list .product10 .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+
+/*5F*/
+.floor .floor5 .left a{
+    color: #E0267B;
+}
+.floor .floor5 .list .c{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    left: 720px;
+    top: 400px;
+}
+.floor .floor5 .list .c a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor5 .list .c .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor5 .list .c .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor5 .list .c .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor5 .list .c .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor5 .list .c .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor5 .list .c .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .floor5 .list .product11{
+    left: 960px;
+}
+/*6F*/
+.floor .floor6 .left a{
+    color: #0B9FEC;
+}
+.floor .floor6 .list .product5{
+    position: absolute;
+    top: 0;
+    left: 960px;
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+}
+.floor .floor6 .list .product5 img{
+    height: 199px;
+    width: 239px;
+}
+.floor .floor6 .list .d{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 400px;
+}
+.floor .floor6 .list .d a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor6 .list .d .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor6 .list .d .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor6 .list .d .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor6 .list .d .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor6 .list .d .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor6 .list .d .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .floor6 .list .product10{
+    left: 720px;
+}
+
+
+
+
+
+
+/*7F*/
+.floor .floor7 .left a{
+    color: #E0267B;
+}
+.floor .floor7 .list .product2{
+    border: 1px solid #e8e8e8;
+    height: 399px;
+    width: 479px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
+.floor .floor7 .list .product2 .relative{
+    position: relative;
+}
+.floor .floor7 .list .product2 .relative .a1{
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 24px;
+    left: 104px;
+}
+.floor .floor7 .list .product2 .relative .a1 img{
+    width: 370px;
+    height: 370px;
+}
+.floor .floor7 .list .product2 .relative .a2{
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    width: 440px;
+    z-index: 2;
+}
+.floor .floor7 .list .product2 .relative .a2 .b1{
+    line-height: 22px;
+    text-align: left;
+}
+.floor .floor7 .list .product2 .relative .a2 .b1 span{
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+.floor .floor7 .list .product2 .relative .a2 .b2{
+    line-height: 18px;
+    padding-top: 8px;
+    text-align: left;
+    width: 140px;
+    color: #666;
+    font-size: 12px;
+}
+.floor .floor7 .list .product2 .relative .a2 .b3{
+    line-height: 18px;
+    padding-top: 8px;
+    text-align: left;
+    width: 140px;
+    color: #d70000;
+    font-size: 14px;
+}
+.floor .floor7 .list .e{
+    border: 1px solid #e8e8e8;
+    height: 199px;
+    width: 239px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 720px;
+}
+.floor .floor7 .list .product4{
+    padding: 0;
+    top: 200px;
+}
+.floor .floor7 .list .e a:hover h3 span{
+    color: #c80000;
+}
+.floor .floor7 .list .e .a1{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+.floor .floor7 .list .product4 .a1{
+    padding-top: 0;
+}
+.floor .floor7 .list .e .a1 img{
+    width: 130px;
+    height: 130px;
+}
+.floor .floor7 .list .e .a2{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+.floor .floor7 .list .e .a2 span{
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+.floor .floor7 .list .e .a3{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 8px;
+    text-align: center;
+}
+.floor .floor7 .list .e .a3 span{
+    color: #d70000;
+    font-size: 12px;
+}
+.floor .floor7 .list .product8{
+    width: 240px;
+    height: 201px;
+    position: absolute;
+    left: 240px;
+    top: 400px;
+    z-index: 10;
+}
+.floor .floor7 .list .product8 .a1{
+    background-image: url("img/css1.png");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: -135px -145px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+.floor .floor7 .list .product8 .a2{
+    position: relative;
+    height: 100%;
+}
+.floor .floor7 .list .product8 .a3{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 32px;
+    text-align: center;
+}
+.floor .floor7 .list .product8 a:hover span{
+    color: #c80000;
+}
+.floor .floor7 .list .product9{
+    top: 400px;
+    left: 480px;
+}
+.floor .floor7 .list .product10{
+    top: 400px;
+    left: 720px;
+}
+/*楼层结束*/
+
+/*footer开始*/
+.footer{
+    background-color: #fff;
+    margin-top: 50px;
+}
+.footer a:hover {
+    color: #f01e00;
+}
+.fb_bg {
+    background-color: #fbfbfb;
+}
+.footer .icon_list {
+    font-size: 0;
+    padding: 20px 0;
+}
+.footer .icon_list li {
+    background-image: url(img/sprite_footer.png);
+    background-repeat: no-repeat;
+    background-size: 38px auto;
+    display: inline-block;
+    height: 40px;
+    width: 300px;
+}
+.footer .icon_list .zheng {
+    background-position: 50px 0;
+}
+.footer .icon_list .returns {
+    background-position: 50px -50px;
+}
+.footer .icon_list .notips {
+    background-position: 50px -100px;
+}
+.footer .icon_list .policy {
+    background-position: 50px -150px;
+}
+.footer .icon_list li a, .footer .icon_list li span {
+    color: #666;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 100px;
+    width: 100%;
+}
+
+
+
+.footer .help_list {
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.footer .help_list dl {
+    float: left;
+    padding-left: 35px;
+    width: 205px;
+}
+.footer .help_list dl dd{
+    padding: 0;
+}
+.footer .help_list dl dd a {
+    color: #888;
+    font-size: 12px;
+    line-height: 28px;
+    text-indent: 5px;
+}
+.footer .help_list dl dt {
+    color: #333;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.footer .service_online {
+    float: right;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    width: 220px;
+    padding-bottom: 25px;
+    padding-top: 35px;
+}
+.footer .service_online dl {
+    padding-left: 15px;
+}
+.footer .service_online dl dt {
+    color: #333;
+    display: none;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.footer .service_online .phone400 {
+    background-image: url(img/iphone.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+.footer .service_online dl dd {
+    color: #888888;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    line-height: 16px;
+    padding-left: 45px;
+}
+
+.footer .service_online .kf_online {
+    background-image: url(img/dog.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+.footer .service_online dl dd span{
+    font-size: 12px;
+    color: #d80c18;
+}
+.footer .service_online dl dd span.font18 {
+    font-size: 18px;
+}
+.footer .service_online dl dd span.bold {
+    font-weight: bold;
+}
+.footer_link{
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.dark {
+    color: #333333;
+}
+.footer_link a{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/*友情链接-开始*/
+.friendlink {
+    display: block;
+    margin: 10px auto;
+    width: 1200px;
+}
+.friendlink a:hover {
+    color: #f01e00;
+}
+.friendly_tit {
+    color: #333;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    text-align: center;
+    width: 82px;
+}
+.friendly {
+    color: #333;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 1118px;
+}
+.friendly .friendly_con {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1118px;
+}
+.friendly ul {
+    height: auto;
+}
+.friendly ul li {
+    display: inline-block;
+    height: 20px;
+    padding-right: 12px;
+}
+.friendly ul li a {
+    color: #666666;
+}
+/*友情链接-结束*/
+
+.copyright{
+    background-color: #fff;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+/*footer结束*/
+
+
+
